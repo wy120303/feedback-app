@@ -12,8 +12,7 @@ function App() {
 
     const addFeedback = (newFeedback) => {
         newFeedback.id = uuidv4()
-        newFeedback.aNewField = '123'
-        console.log(newFeedback)
+        setFeedBack([newFeedback, ...feedback])
     }
 
     const deleteFeedback = (id)=>{
